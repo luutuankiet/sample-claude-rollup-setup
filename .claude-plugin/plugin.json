@@ -1,0 +1,10 @@
+{
+  "name": "rollup",
+  "version": "1.0.0",
+  "description": "Make the agent fold a busy session into one final reply a cold reader can act on, and nudge it when a background result lands.",
+  "author": { "name": "luutuankiet", "url": "https://github.com/luutuankiet" },
+  "homepage": "https://github.com/luutuankiet/sample-claude-rollup-setup",
+  "repository": "https://github.com/luutuankiet/sample-claude-rollup-setup",
+  "license": "MIT",
+  "keywords": ["rollup", "hooks", "reporting"]
+}

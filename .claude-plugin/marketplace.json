@@ -1,0 +1,12 @@
+{
+  "name": "sample-claude-rollup-setup",
+  "description": "A self-contained Claude Code rollup setup: one rule and two hooks.",
+  "owner": { "name": "luutuankiet", "url": "https://github.com/luutuankiet" },
+  "plugins": [
+    {
+      "name": "rollup",
+      "source": "./",
+      "description": "Rollup rules loaded at session start, plus a nudge when a background result lands."
+    }
+  ]
+}
