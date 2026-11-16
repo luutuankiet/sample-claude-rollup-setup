@@ -64,7 +64,7 @@ flowchart LR
   end
   agent["The agent's context"]
   ss --> load --> rule -->|"printed, becomes context"| agent
-  ups --> nudge -->|"only if #lt;task-notification#gt;"| txt -->|"printed, becomes context"| agent
+  ups --> nudge -->|"only on a task-notification"| txt -->|"printed, becomes context"| agent
   agent -->|"short waits, then one rollup"| you
   you -->|"prompt"| ups
 ```
@@ -91,7 +91,7 @@ sequenceDiagram
   A-->>U: "Logs helper done, waiting on the test copy." (1 line)
   S2-->>H: done
   H->>A: task-notification + ROLLUP CHECK nudge
-  A-->>U: # Rollup: verdict, threads, open questions, what is blocked on you
+  A-->>U: ROLLUP: verdict, threads, open questions, what is blocked on you
   U->>H: "yes"
 ```
 
