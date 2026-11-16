@@ -50,7 +50,7 @@ Three small files and one rule. The harness calls the scripts; the scripts
 print text; the text lands in the agent's context.
 
 ```mermaid
-flowchart LR
+flowchart TB
   you(["You<br/>drive the main thread"])
   subgraph harness["Claude Code (the harness)"]
     ss["SessionStart event<br/>startup, resume, /clear, compact"]
