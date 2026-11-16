@@ -84,7 +84,7 @@ sequenceDiagram
   H->>A: prompt (nudge silent: no task-notification)
   A->>S1: read export logs + recent migrations (background)
   A->>S2: build a data copy, time the export (background)
-  A-->>U: "Two helpers running; back when both report." (1 line)
+  A-->>U: "Two helpers running, back when both report." (1 line)
   Note over A,S2: ~20 minutes of tool calls,<br/>reads and status lines you do not need
   S1-->>H: done
   H->>A: task-notification + ROLLUP CHECK nudge
