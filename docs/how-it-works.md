@@ -59,7 +59,7 @@ flowchart LR
   L -->|"prints"| R
   R -->|"stdout becomes context"| A
   CC -->|"UserPromptSubmit:<br/>every turn"| N
-  N -->|"payload has &lt;task-notification&gt;?"| T
+  N -->|"payload has #lt;task-notification#gt;?"| T
   T -->|"stdout becomes context"| A
 ```
 
@@ -104,11 +104,11 @@ sequenceDiagram
   participant A as Agent
   actor U as You
   BG-->>CC: finished, result ready
-  CC->>N: UserPromptSubmit payload with <task-notification>
+  CC->>N: UserPromptSubmit payload with #lt;task-notification#gt;
   N-->>CC: ROLLUP CHECK text
   CC->>A: result + ROLLUP CHECK
   alt something else still running
-    A-->>U: "Test subagent done; waiting on the build." (1-2 lines)
+    A-->>U: "Test subagent done, waiting on the build." (1-2 lines)
   else nothing running
     A-->>U: # Rollup: verdict, threads, open questions, Not done
   end
